@@ -1,5 +1,5 @@
-import { SessionLobby } from '@/components/session/SessionLobby';
+import { HomePage } from '@/components/HomePage';
 
 export default function Home() {
-  return <SessionLobby />;
+  return <HomePage />;
 }

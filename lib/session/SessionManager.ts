@@ -5,9 +5,17 @@ import { Vote, VoteValue, VoteStatistics } from '@/lib/types/vote';
 import { SESSION_LIMITS, MESSAGES } from '@/lib/constants';
 
 export class SessionManager {
+  private static instance: SessionManager;
   private sessions: Map<string, Session> = new Map();
   private sessionTimers: Map<string, NodeJS.Timeout> = new Map();
   private scrumMasterTimers: Map<string, NodeJS.Timeout> = new Map();
+
+  static getInstance(): SessionManager {
+    if (!SessionManager.instance) {
+      SessionManager.instance = new SessionManager();
+    }
+    return SessionManager.instance;
+  }
 
   createSession(name: string, creator: SessionUser): Session {
     if (this.sessions.size >= SESSION_LIMITS.MAX_CONCURRENT_SESSIONS) {
