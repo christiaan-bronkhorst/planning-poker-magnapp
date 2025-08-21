@@ -19,7 +19,7 @@ const port = parseInt(process.env.PORT || '3000', 10);
 const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
 
-const sessionManager = new SessionManager();
+const sessionManager = SessionManager.getInstance();
 
 app.prepare().then(() => {
   const server = createServer(async (req, res) => {
