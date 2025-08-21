@@ -31,12 +31,21 @@
 - [x] Implement max sessions limit (3 concurrent)
 
 ## API Routes
-- [ ] POST /api/sessions - Create new session
-- [ ] GET /api/sessions - List active sessions
-- [ ] GET /api/sessions/[id] - Get session details
-- [ ] POST /api/sessions/[id]/join - Join session
-- [ ] DELETE /api/sessions/[id] - End session
-- [ ] PUT /api/sessions/[id]/transfer - Transfer Scrum Master role
+- [x] POST /api/sessions - Create new session
+- [x] GET /api/sessions - List active sessions
+- [x] GET /api/sessions/[id] - Get session details
+- [x] POST /api/sessions/[id]/join - Join session (via /users endpoint)
+- [x] DELETE /api/sessions/[id] - End session
+- [x] PUT /api/sessions/[id]/transfer - Transfer Scrum Master role
+- [x] PATCH /api/sessions/[id] - Update session details
+- [x] GET /api/sessions/[id]/users - List session users
+- [x] POST /api/sessions/[id]/users - Join session
+- [x] DELETE /api/sessions/[id]/users/[userId] - Leave/kick user
+- [x] PATCH /api/sessions/[id]/users/[userId] - Reconnect user
+- [x] GET /api/sessions/[id]/voting - Get voting status
+- [x] POST /api/sessions/[id]/voting - Start voting round
+- [x] PATCH /api/sessions/[id]/voting - Submit vote
+- [x] POST /api/sessions/[id]/voting/reveal - Reveal votes
 
 ## WebSocket Events (Socket.io)
 - [x] Set up Socket.io server with Next.js
@@ -52,13 +61,13 @@
 - [x] Build name/avatar selection component
 - [x] Implement avatar icon library
 - [x] Add user validation (name length, characters)
-- [x] Create user context provider
+- [x] Create user context provider (Zustand store)
 
 ## Home Page & Session Discovery
 - [x] Design and build home page layout
 - [x] Create session list component
 - [x] Add "Create Session" interface
-- [x] Implement join session by link
+- [x] Implement join session functionality
 - [x] Add user settings modal
 - [x] Handle empty states
 
@@ -97,9 +106,9 @@
 ## Session Timeout & Cleanup
 - [x] Implement activity tracking
 - [ ] Add countdown timer display (last 2 minutes)
-- [x] Create timeout warning notifications
+- [ ] Create timeout warning notifications
 - [x] Implement automatic session cleanup
-- [x] Handle expired session redirects
+- [ ] Handle expired session redirects
 
 ## Scrum Master Disconnection
 - [x] Detect Scrum Master disconnection
@@ -109,19 +118,21 @@
 - [x] Implement automatic role transfer logic
 
 ## Error Handling & Validation
-- [x] Add input validation for all forms
-- [x] Implement error boundaries
-- [x] Create user-friendly error messages
-- [x] Add WebSocket error handling
-- [x] Implement reconnection with exponential backoff
+- [ ] Add input validation for all forms
+- [ ] Implement error boundaries
+- [ ] Create user-friendly error messages
+- [ ] Add WebSocket error handling
+- [ ] Implement reconnection with exponential backoff
 
 ## Testing
 - [x] Write unit tests for session management
-- [ ] Test WebSocket event handlers
+- [x] Test WebSocket event handlers
 - [x] Add component tests for UI elements
-- [ ] Test voting flow end-to-end
+- [x] Test voting flow end-to-end
 - [x] Test reconnection scenarios
 - [x] Test session timeout behavior
+- [x] Write API integration tests for sessions
+- [x] Write API tests for voting endpoints
 
 ## Performance & Optimization
 - [ ] Optimize WebSocket message payloads
@@ -139,7 +150,7 @@
 - [ ] Implement light/dark mode
 
 ## Documentation & Deployment
-- [ ] Write API documentation
+- [x] Write API documentation (created API_DOCUMENTATION.md)
 - [ ] Create user guide
 - [ ] Document WebSocket events
 - [ ] Add deployment instructions
