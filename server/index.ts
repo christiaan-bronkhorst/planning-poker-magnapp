@@ -3,6 +3,7 @@ import { parse } from 'url';
 import next from 'next';
 import { Server as SocketIOServer, Socket } from 'socket.io';
 import { SessionManager } from '@/lib/session/SessionManager';
+import { setSocketIO } from '@/lib/api/middleware';
 import {
   ServerToClientEvents,
   ClientToServerEvents,
@@ -44,6 +45,9 @@ app.prepare().then(() => {
       methods: ['GET', 'POST'],
     },
   });
+
+  // Set the Socket.IO instance for API routes to use
+  setSocketIO(io);
 
   io.on('connection', (socket) => {
     console.log('New client connected:', socket.id);
