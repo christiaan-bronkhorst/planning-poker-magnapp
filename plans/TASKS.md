@@ -31,12 +31,21 @@
 - [x] Implement max sessions limit (3 concurrent)
 
 ## API Routes
-- [ ] POST /api/sessions - Create new session
-- [ ] GET /api/sessions - List active sessions
-- [ ] GET /api/sessions/[id] - Get session details
-- [ ] POST /api/sessions/[id]/join - Join session
-- [ ] DELETE /api/sessions/[id] - End session
-- [ ] PUT /api/sessions/[id]/transfer - Transfer Scrum Master role
+- [x] POST /api/sessions - Create new session
+- [x] GET /api/sessions - List active sessions
+- [x] GET /api/sessions/[id] - Get session details
+- [x] POST /api/sessions/[id]/join - Join session (via /users endpoint)
+- [x] DELETE /api/sessions/[id] - End session
+- [x] PUT /api/sessions/[id]/transfer - Transfer Scrum Master role
+- [x] PATCH /api/sessions/[id] - Update session details
+- [x] GET /api/sessions/[id]/users - List session users
+- [x] POST /api/sessions/[id]/users - Join session
+- [x] DELETE /api/sessions/[id]/users/[userId] - Leave/kick user
+- [x] PATCH /api/sessions/[id]/users/[userId] - Reconnect user
+- [x] GET /api/sessions/[id]/voting - Get voting status
+- [x] POST /api/sessions/[id]/voting - Start voting round
+- [x] PATCH /api/sessions/[id]/voting - Submit vote
+- [x] POST /api/sessions/[id]/voting/reveal - Reveal votes
 
 ## WebSocket Events (Socket.io)
 - [x] Set up Socket.io server with Next.js
@@ -48,51 +57,51 @@
 - [x] Implement reconnection logic
 
 ## User Management
-- [ ] Create user preferences storage (localStorage)
-- [ ] Build name/avatar selection component
-- [ ] Implement avatar icon library
-- [ ] Add user validation (name length, characters)
-- [ ] Create user context provider
+- [x] Create user preferences storage (localStorage)
+- [x] Build name/avatar selection component
+- [x] Implement avatar icon library
+- [x] Add user validation (name length, characters)
+- [x] Create user context provider (Zustand store)
 
 ## Home Page & Session Discovery
-- [ ] Design and build home page layout
-- [ ] Create session list component
-- [ ] Add "Create Session" interface
-- [ ] Implement join session by link
-- [ ] Add user settings modal
-- [ ] Handle empty states
+- [x] Design and build home page layout
+- [x] Create session list component
+- [x] Add "Create Session" interface
+- [x] Implement join session functionality
+- [x] Add user settings modal
+- [x] Handle empty states
 
 ## Virtual Boardroom UI
-- [ ] Create boardroom layout with oval table
-- [ ] Position user avatars around table (max 16)
-- [ ] Add Scrum Master indicator
-- [ ] Implement voting status indicators
-- [ ] Create responsive layout for mobile/tablet
-- [ ] Add session info header (name, timer)
+- [x] Create boardroom layout with oval table
+- [x] Position user avatars around table (max 16)
+- [x] Add Scrum Master indicator
+- [x] Implement voting status indicators
+- [x] Create responsive layout for mobile/tablet
+- [x] Add session info header (name, timer)
 
 ## Voting Interface
-- [ ] Create voting card components (Fibonacci + Coffee)
-- [ ] Implement card selection interaction
-- [ ] Add vote submission logic
-- [ ] Create vote reveal animation
-- [ ] Build statistics display component
-- [ ] Add voting round management
+- [x] Create voting card components (Fibonacci + Coffee)
+- [x] Implement card selection interaction
+- [x] Add vote submission logic
+- [x] Create vote reveal animation
+- [x] Build statistics display component
+- [x] Add voting round management
 
 ## Scrum Master Controls
-- [ ] Create control panel UI for Scrum Master
-- [ ] Implement "Start Voting" functionality
-- [ ] Add "Reveal Votes" functionality  
-- [ ] Create "New Round" functionality
-- [ ] Add user kick functionality
-- [ ] Implement role transfer UI
+- [x] Create control panel UI for Scrum Master
+- [x] Implement "Start Voting" functionality
+- [x] Add "Reveal Votes" functionality  
+- [x] Create "New Round" functionality
+- [x] Add user kick functionality
+- [x] Implement role transfer UI
 
 ## Real-time Synchronization
-- [ ] Sync user joins/leaves across clients
-- [ ] Implement real-time voting status updates
-- [ ] Sync vote submissions
-- [ ] Add real-time vote reveal
-- [ ] Implement session state synchronization
-- [ ] Add connection status indicator
+- [x] Sync user joins/leaves across clients
+- [x] Implement real-time voting status updates
+- [x] Sync vote submissions
+- [x] Add real-time vote reveal
+- [x] Implement session state synchronization
+- [x] Add connection status indicator
 
 ## Session Timeout & Cleanup
 - [x] Implement activity tracking
@@ -117,11 +126,13 @@
 
 ## Testing
 - [x] Write unit tests for session management
-- [ ] Test WebSocket event handlers
-- [ ] Add component tests for UI elements
-- [ ] Test voting flow end-to-end
+- [x] Test WebSocket event handlers
+- [x] Add component tests for UI elements
+- [x] Test voting flow end-to-end
 - [x] Test reconnection scenarios
 - [x] Test session timeout behavior
+- [x] Write API integration tests for sessions
+- [x] Write API tests for voting endpoints
 
 ## Performance & Optimization
 - [ ] Optimize WebSocket message payloads
@@ -139,7 +150,7 @@
 - [ ] Implement light/dark mode
 
 ## Documentation & Deployment
-- [ ] Write API documentation
+- [x] Write API documentation (created API_DOCUMENTATION.md)
 - [ ] Create user guide
 - [ ] Document WebSocket events
 - [ ] Add deployment instructions
