@@ -10,25 +10,25 @@
 - [x] Set up Tailwind CSS for styling
 
 ## Project Structure
-- [ ] Create folder structure (components, pages, lib, types, etc.)
-- [ ] Set up Socket.io with Next.js custom server
-- [ ] Create TypeScript interfaces for data models
-- [ ] Set up shared constants and configuration
+- [x] Create folder structure (components, pages, lib, types, etc.)
+- [x] Set up Socket.io with Next.js custom server
+- [x] Create TypeScript interfaces for data models
+- [x] Set up shared constants and configuration
 
 ## Core Data Models & Types
-- [ ] Define User interface (name, avatar, userId)
-- [ ] Define Session interface (sessionId, name, users, scrumMaster)
-- [ ] Define Vote interface and voting cards enum
-- [ ] Define WebSocket event types
-- [ ] Create session storage manager class
+- [x] Define User interface (name, avatar, userId)
+- [x] Define Session interface (sessionId, name, users, scrumMaster)
+- [x] Define Vote interface and voting cards enum
+- [x] Define WebSocket event types
+- [x] Create session storage manager class
 
 ## Session Management (Backend)
-- [ ] Implement in-memory session storage with Map
-- [ ] Add session creation with GUID generation
-- [ ] Implement session expiry (10-minute timeout)
-- [ ] Add session cleanup on timeout
-- [ ] Create session validation middleware
-- [ ] Implement max sessions limit (3 concurrent)
+- [x] Implement in-memory session storage with Map
+- [x] Add session creation with GUID generation
+- [x] Implement session expiry (10-minute timeout)
+- [x] Add session cleanup on timeout
+- [x] Create session validation middleware
+- [x] Implement max sessions limit (3 concurrent)
 
 ## API Routes
 - [ ] POST /api/sessions - Create new session
@@ -39,13 +39,13 @@
 - [ ] PUT /api/sessions/[id]/transfer - Transfer Scrum Master role
 
 ## WebSocket Events (Socket.io)
-- [ ] Set up Socket.io server with Next.js
-- [ ] Implement connection/disconnection handlers
-- [ ] Create room management for sessions
-- [ ] Add user join/leave events
-- [ ] Implement voting events (start, submit, reveal)
-- [ ] Add Scrum Master control events
-- [ ] Implement reconnection logic
+- [x] Set up Socket.io server with Next.js
+- [x] Implement connection/disconnection handlers
+- [x] Create room management for sessions
+- [x] Add user join/leave events
+- [x] Implement voting events (start, submit, reveal)
+- [x] Add Scrum Master control events
+- [x] Implement reconnection logic
 
 ## User Management
 - [ ] Create user preferences storage (localStorage)
@@ -95,18 +95,18 @@
 - [ ] Add connection status indicator
 
 ## Session Timeout & Cleanup
-- [ ] Implement activity tracking
+- [x] Implement activity tracking
 - [ ] Add countdown timer display (last 2 minutes)
 - [ ] Create timeout warning notifications
-- [ ] Implement automatic session cleanup
+- [x] Implement automatic session cleanup
 - [ ] Handle expired session redirects
 
 ## Scrum Master Disconnection
-- [ ] Detect Scrum Master disconnection
-- [ ] Implement session pause state
-- [ ] Add waiting message for participants
-- [ ] Create 5-minute grace period timer
-- [ ] Implement automatic role transfer logic
+- [x] Detect Scrum Master disconnection
+- [x] Implement session pause state
+- [x] Add waiting message for participants
+- [x] Create 5-minute grace period timer
+- [x] Implement automatic role transfer logic
 
 ## Error Handling & Validation
 - [ ] Add input validation for all forms
@@ -116,12 +116,12 @@
 - [ ] Implement reconnection with exponential backoff
 
 ## Testing
-- [ ] Write unit tests for session management
+- [x] Write unit tests for session management
 - [ ] Test WebSocket event handlers
 - [ ] Add component tests for UI elements
 - [ ] Test voting flow end-to-end
-- [ ] Test reconnection scenarios
-- [ ] Test session timeout behavior
+- [x] Test reconnection scenarios
+- [x] Test session timeout behavior
 
 ## Performance & Optimization
 - [ ] Optimize WebSocket message payloads

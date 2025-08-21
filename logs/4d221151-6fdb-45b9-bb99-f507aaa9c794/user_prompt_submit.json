@@ -1,0 +1,23 @@
+[
+  {
+    "session_id": "4d221151-6fdb-45b9-bb99-f507aaa9c794",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/4d221151-6fdb-45b9-bb99-f507aaa9c794.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "q"
+  },
+  {
+    "session_id": "4d221151-6fdb-45b9-bb99-f507aaa9c794",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/4d221151-6fdb-45b9-bb99-f507aaa9c794.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Make a detailed plan to accomplish this. Think hardest.\nHow will we implement only the functionality we need right now?\nIdentify files that need to be changed.\nDo not include plans for legacy fallback unless required or explicitly requested.\n\nWrite a short overview of what you are about to do.\nWrite function names and 1-3 sentences about what they do.\nWrite test names and 5-10 words about behaviour to cover."
+  },
+  {
+    "session_id": "4d221151-6fdb-45b9-bb99-f507aaa9c794",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/4d221151-6fdb-45b9-bb99-f507aaa9c794.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/execute "
+  }
+]

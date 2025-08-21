@@ -1,0 +1,9 @@
+[
+  {
+    "session_id": "4d221151-6fdb-45b9-bb99-f507aaa9c794",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/4d221151-6fdb-45b9-bb99-f507aaa9c794.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  }
+]
