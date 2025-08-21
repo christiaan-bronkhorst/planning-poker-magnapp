@@ -1,0 +1,9 @@
+[
+  {
+    "session_id": "3659d8b9-6d50-4f94-b21d-1e89985b08d7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/3659d8b9-6d50-4f94-b21d-1e89985b08d7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "I want to understand why you want to remove things and what this will solve, keep in mind the PRs comments on what was implemented"
+  }
+]
