@@ -233,5 +233,49 @@
       "command": "git add -A && git commit -m \"fix: resolve merge conflicts for PR #3 boardroom-ui feature\n\n- Use HomePage component from PR #2 for main page\n- Integrate boardroom UI components with existing architecture\"",
       "description": "Commit merge conflict resolution for PR #3"
     }
+  },
+  {
+    "session_id": "3659d8b9-6d50-4f94-b21d-1e89985b08d7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/3659d8b9-6d50-4f94-b21d-1e89985b08d7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/cbt/projects/work/planning-poker-magnapp/app/page.tsx",
+      "content": "import { HomePage } from '@/components/HomePage';\n\nexport default function Home() {\n  return <HomePage />;\n}"
+    }
+  },
+  {
+    "session_id": "3659d8b9-6d50-4f94-b21d-1e89985b08d7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/3659d8b9-6d50-4f94-b21d-1e89985b08d7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git checkout --theirs app/session/[id]/page.tsx plans/TASKS.md",
+      "description": "Accept main branch versions for conflicting files"
+    }
+  },
+  {
+    "session_id": "3659d8b9-6d50-4f94-b21d-1e89985b08d7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/3659d8b9-6d50-4f94-b21d-1e89985b08d7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git checkout --theirs \"app/session/[id]/page.tsx\" plans/TASKS.md",
+      "description": "Accept main branch versions for conflicting files"
+    }
+  },
+  {
+    "session_id": "3659d8b9-6d50-4f94-b21d-1e89985b08d7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/3659d8b9-6d50-4f94-b21d-1e89985b08d7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git add -A && git commit -m \"fix: resolve merge conflicts for PR #4 voting-interface feature\n\n- Use HomePage component from main for app root\n- Keep complete session page implementation from main\n- Integrate voting components with existing architecture\"",
+      "description": "Commit merge conflict resolution for PR #4"
+    }
   }
 ]
