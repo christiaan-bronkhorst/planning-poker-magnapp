@@ -31,12 +31,21 @@
 - [x] Implement max sessions limit (3 concurrent)
 
 ## API Routes
-- [ ] POST /api/sessions - Create new session
-- [ ] GET /api/sessions - List active sessions
-- [ ] GET /api/sessions/[id] - Get session details
-- [ ] POST /api/sessions/[id]/join - Join session
-- [ ] DELETE /api/sessions/[id] - End session
-- [ ] PUT /api/sessions/[id]/transfer - Transfer Scrum Master role
+- [x] POST /api/sessions - Create new session
+- [x] GET /api/sessions - List active sessions
+- [x] GET /api/sessions/[id] - Get session details
+- [x] POST /api/sessions/[id]/join - Join session (via /users endpoint)
+- [x] DELETE /api/sessions/[id] - End session
+- [x] PUT /api/sessions/[id]/transfer - Transfer Scrum Master role
+- [x] PATCH /api/sessions/[id] - Update session details
+- [x] GET /api/sessions/[id]/users - List session users
+- [x] POST /api/sessions/[id]/users - Join session
+- [x] DELETE /api/sessions/[id]/users/[userId] - Leave/kick user
+- [x] PATCH /api/sessions/[id]/users/[userId] - Reconnect user
+- [x] GET /api/sessions/[id]/voting - Get voting status
+- [x] POST /api/sessions/[id]/voting - Start voting round
+- [x] PATCH /api/sessions/[id]/voting - Submit vote
+- [x] POST /api/sessions/[id]/voting/reveal - Reveal votes
 
 ## WebSocket Events (Socket.io)
 - [x] Set up Socket.io server with Next.js
@@ -122,6 +131,8 @@
 - [ ] Test voting flow end-to-end
 - [x] Test reconnection scenarios
 - [x] Test session timeout behavior
+- [x] Write API integration tests for sessions
+- [x] Write API tests for voting endpoints
 
 ## Performance & Optimization
 - [ ] Optimize WebSocket message payloads
@@ -139,7 +150,7 @@
 - [ ] Implement light/dark mode
 
 ## Documentation & Deployment
-- [ ] Write API documentation
+- [x] Write API documentation (created API_DOCUMENTATION.md)
 - [ ] Create user guide
 - [ ] Document WebSocket events
 - [ ] Add deployment instructions
