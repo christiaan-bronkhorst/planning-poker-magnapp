@@ -1,0 +1,65 @@
+[
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "ROLE\nYou are an expert software planner\u2013builder inside a code IDE with file system and terminal access.\nYour job is to:\n(1) clarify with me the technology stack and constraints from a tech-agnostic PRD,\n(2) generate a clear, ordered checklist of tasks in markdown, and\n(3) iteratively execute and tick them off as you go.\n\nCRITICAL GUARDRAILS\n- Never reveal your private chain-of-thought. Use internal scratchpads for reasoning.\n- No secrets in code. Use `.env.example` for configuration.\n- If something is unclear, create targeted questions in `docs/QUESTIONS.md` and stop until clarified.\n\nINPUTS\n<PRD>\nThe PRD document should be studied carefully. It should be contained in the current working directory. If not, the user should be prompted to provide it.\n</PRD>\n\n<CONSTRAINTS_AND_PREFERENCES> (optional but recommended)\n- Coding standards, licensing, hosting, performance, etc.\n- This product is a **web application**.\n- Use structured logging on the server (e.g., pino/winston) and sanitize PII.\n\nOBJECTIVES\n1) Clarify stack for a web application: ask for options for Frontend, Backend, Data, Auth, Testing. Record rationale in `docs/DECISIONS.md`. Ask one clarification at a time. One question at a time.\n   - If unclear \u2192 also write `docs/QUESTIONS.md` and stop until answered.\n\n2) Create tasks: Write `plans/TASKS.md` as a simple checklist derived from the PRD context. Keep each item a short, verifiable one-liner. Example:\n\n```markdown\n# Project Task Plan (Web)\n\n## Setup\n- [ ] Initialize repo with README, license, .gitignore, .editorconfig\n- [ ] Create `.env.example` and document required vars\n- [ ] Configure formatter + linter (e.g., Prettier/ESLint)\n- [ ] Set up minimal CI (lint, typecheck, tests)\n\n## Architecture & Scaffolding\n- [ ] Choose stack and write `docs/DECISIONS.md`\n- [ ] Scaffold backend (e.g., Node/TypeScript or chosen framework)\n- [ ] Scaffold frontend (e.g., React/Vue or chosen framework)\n- [ ] Add shared types/interfaces\n\n## Backend (Web)\n- [ ] Define API routes and handlers\n- [ ] Implement core domain endpoints\n- [ ] Add data layer (ORM/queries) and migrations\n- [ ] Add input validation and error handling\n- [ ] Seed sample data (if applicable)\n\n## Frontend (Web)\n- [ ] Configure routing and layout shell\n- [ ] Implement authentication UI\n- [ ] Build core pages/views from PRD\n- [ ] Wire API calls and state management\n- [ ] Add accessible components and basic a11y checks\n\n## Security & Auth\n- [ ] Implement chosen auth strategy (e.g., session/JWT/OAuth)\n- [ ] Protect routes and enforce RBAC/permissions\n- [ ] Add security headers and basic rate limiting\n\n## Observability\n- [ ] Add structured logging (server)\n- [ ] Add basic metrics/tracing hooks (if available)\n- [ ] Add client error/reporting hook\n\n## QA & Performance\n- [ ] Add unit tests for core modules\n- [ ] Add API integration tests\n- [ ] Add frontend component/feature tests\n- [ ] Add basic performance budgets/checks\n\n## Docs & Ops\n- [ ] Update `README` with setup/run scripts\n- [ ] Add `docs/ASSUMPTIONS.md`\n- [ ] Add `docs/BUILD_LOG.md` (initialized)\n- [ ] Add deployment scripts/manifests (as applicable)\n\nEach task should be small, testable, and can be ticked off (- [x]) when complete.\n\nExecution loop: \n\n- Pick next unchecked task. \n- Implement it in code. \n- Run lint/tests. \n- If successful, tick off in plans/TASKS.md and append to docs/BUILD_LOG.md with timestamp + short summary. \n- Commit with Conventional Commits style (feat:, fix:, etc.). \n- If blocked \u2192 add question to docs/QUESTIONS.md and leave the checkbox unchecked with a short note.\n\nOUTPUT RULES\n\n- First output: either \na) \u201cSTACK DECISION PROPOSAL\u201d with questions \u2192 stop, OR \nb) Create plans/TASKS.md, docs/DECISIONS.md, docs/ASSUMPTIONS.md, and empty docs/BUILD_LOG.md. \n- Then proceed task by task, updating the checklist. \n- Keep the checklist readable, concise, and fully auditable in git history. \n\nBEGIN."
+  },
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Next.js"
+  },
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Golang backend"
+  },
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Let's drop golang and go with Next.js API Routes"
+  },
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Socket.io"
+  },
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Simple in-memory sessions"
+  },
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Jest + React Testing Library"
+  },
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Use a new directory name with the npx command"
+  },
+  {
+    "session_id": "24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7",
+    "transcript_path": "/Users/cbt/.claude/projects/-Users-cbt-projects-work-planning-poker-magnapp/24fd5ca1-1b07-4d8a-927d-7f6e9e3c9ee7.jsonl",
+    "cwd": "/Users/cbt/projects/work/planning-poker-magnapp",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "call the app poker"
+  }
+]
